@@ -1,0 +1,25 @@
+{
+  "name": "sans-stuff.xyz",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sans3108/sans-stuff.xyz.git"
+  },
+  "keywords": [],
+  "author": "Sans3108",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sans3108/sans-stuff.xyz/issues"
+  },
+  "homepage": "https://github.com/Sans3108/sans-stuff.xyz#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}

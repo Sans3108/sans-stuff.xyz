@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sans' Stuff</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#6089ff" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <meta property="og:url" content="https://sans-stuff.xyz" />
+    <meta property="twitter:url" content="https://sans-stuff.xyz" />
+
+    <meta name="title" content="Sans' Stuff" />
+    <meta property="twitter:title" content="Sans' Stuff" />
+    <meta property="og:title" content="Sans' Stuff" />
+
+    <meta property="og:image" content="https://sans-stuff.xyz/images/logo@128.png" />
+    <meta property="twitter:image" content="https://sans-stuff.xyz/images/logo@128.png" />
+
+    <meta name="description" content="My personal website, welcome!" />
+    <meta property="og:description" content="My personal website, welcome!" />
+    <meta property="twitter:description" content="My personal website, welcome!" />
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="images/logo.png" alt="logo" />
+      <h1 id="title">Sans#0001</h1>
+      <nav>
+        <a href="#">Home</a>
+        |
+        <a href="#">Services</a>
+        |
+        <a href="#">Contact</a>
+        |
+        <a href="#">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="col left">
+        <h1>Hello! I'm Sans...</h1>
+        <p>...and welcome to my website!</p>
+        <p><br /></p>
+        <p>Here I'll put some projects I worked on (and I feel like they're worth sharing) as well as provide a place for a small bio of myself.<br /></p>
+        <p><br /></p>
+        <p>So I'm 19 years old, live in Romania and I like playing games, watching videos and programming silly stuff with JavaScript!</p>
+        <p>I'm not much for brains but I like challenges, usually I'd try the lazy way but there is a point where my mind goes full Zen and use every bit of knowledge I have to master a solution, and it usually works :D</p>
+        <p><br /></p>
+        <p>I spend most of my time on Discord, with my friends or listening to music and headbanging, which (trust me) makes you dizzy real fast, it's kind of cool when I'm bored to just shake my head around then try to deal with the dizziness XD</p>
+        <p><br /></p>
+        <p>Anyway, on the right side you can see some of my projects, please enjoy!</p>
+      </div>
+
+      <div id="colRight" class="col right">
+        <!-- <section class="card">
+          <h2>Title</h2>
+          <p>Description</p>
+          <img src="" alt="" />
+        </section> -->
+      </div>
+      <script>
+        const cards = [
+          {
+            title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, neque?',
+            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea enim perferendis rerum unde dolorem ad, deserunt voluptas amet voluptatibus laudantium?',
+            imageSource: null
+          },
+          {
+            title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, neque?',
+            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea enim perferendis rerum unde dolorem ad, deserunt voluptas amet voluptatibus laudantium?',
+            imageSource: null
+          },
+          {
+            title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, neque?',
+            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea enim perferendis rerum unde dolorem ad, deserunt voluptas amet voluptatibus laudantium?',
+            imageSource: null
+          }
+        ];
+
+        const colRight = document.getElementById('colRight');
+
+        for (card of cards) {
+          const section = document.createElement('section');
+          section.classList.add('card');
+
+          const h2 = document.createElement('h2');
+          h2.innerText = card.title;
+
+          const p = document.createElement('p');
+          p.innerText = card.description;
+
+          //const img = document.createElement('img');
+
+          section.appendChild(h2);
+          section.appendChild(p);
+          colRight.appendChild(section);
+        }
+      </script>
+    </main>
+
+    <footer>
+      <a target="_blank" href="https://discord.com/users/366536353418182657">Discord</a>
+      |
+      <a target="_blank" href="https://github.com/Sans3108/">Github</a>
+    </footer>
+  </body>
+</html>
